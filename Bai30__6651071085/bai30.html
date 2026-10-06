@@ -1,0 +1,29 @@
+<!DOCTYPE html>  
+<html lang="en">
+    <head>  
+        <meta charset=utf-8 />  
+        <title>Insert row in a table - w3resource</title>  
+    </head>
+    <body>  
+        <table id="sampleTable" border="1">  
+            <tr>
+                <td>cột 0  hàng 2</td>  
+                <td>cột 1  hàng 2</td>
+            </tr>  
+            <tr>
+                <td>cột 0  hàng 1</td>  
+                <td>cột 1  hàng 1</td>
+            </tr>  
+</table><br>                                                                      
+    <input type="button" onclick="insert_Row()" value="Insert row">   
+    <script>
+        function insert_Row(){
+            var x=document.getElementById('sampleTable').insertRow(0);  
+            var y=x.insertCell(0);  
+            var z=x.insertCell(1);  
+            y.innerHTML="cột 0  hàng 0";  
+            z.innerHTML="cột 1  hàng 0";
+        }
+    </script>
+    </body>
+</html>

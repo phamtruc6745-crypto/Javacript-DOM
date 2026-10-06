@@ -1,0 +1,29 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset=utf-8 /> 
+        <title>Display a random image.</title> 
+        <style type="text/css"> 
+            body {margin-top: 30px;} 
+        </style>  
+    </head> 
+<body> 
+    <div> 
+        <button id="jsstyle"  
+        onclick="display_random_image();">Show Image</button>  
+    </div> 
+    <script>
+        function display_random_image() { 
+            var myimages=new Array() 
+            myimages[0]="http://farm4.staticflickr.com/3691/11268502654_f28f05966c_m.jpg" 
+            myimages[0] += '" width="240" height="160"';
+            myimages[1]="http://farm1.staticflickr.com/33/45336904_1aef569b30_n.jpg" 
+            myimages[1] += '" width="320" height="195"';
+            myimages[2]="http://farm6.staticflickr.com/5211/5384592886_80a512e2c9.jpg" 
+            myimages[2] += '" width="500" height="343"';
+            var ry=Math.floor(Math.random()*myimages.length) 
+            document.write('<img src="'+myimages[ry]+'">') 
+        }
+    </script>
+</body> 
+</html> 
