@@ -1,0 +1,27 @@
+
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset=utf-8 /> 
+        <title>JS DOM paragraph style</title> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </head>  
+<body> 
+    <p id ='text'>JavaScript Exercises - w3resource</p>  
+    <div> 
+        <button id="jsstyle" 
+        onclick="js_style()">Style</button> 
+    </div> 
+    <script>
+        //Áp dụng DOM và jQuery xử lý sự kiện khi người dùng nhấn nút Submit sẽ thay đổi style 
+        // của đoạn văn bản gồm: fontSize , fontFamily , color. 
+       function js_style() {
+        $('#text').css({
+        'fontSize': '30px',
+        'color': 'red',
+        'fontFamily': 'arial'
+    });
+}
+    </script>
+</body>
+</html>

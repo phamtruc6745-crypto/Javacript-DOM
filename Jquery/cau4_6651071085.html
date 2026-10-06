@@ -1,0 +1,26 @@
+<!DOCTYPE html>  
+<html lang="en">
+    <head>  
+        <meta charset=utf-8 />  
+        <title>Insert row in a table - w3resource</title> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+    </head>
+    <body>  
+        <table id="sampleTable" border="1">  
+            <tr>
+                <td>cột 0  hàng 1</td>  
+                <td>cột 1  hàng 2</td>
+            </tr>  
+            <tr>
+                <td>cột 0  hàng 1</td>  
+                <td>cột 1  hàng 1</td>
+            </tr>  
+</table><br>                                                                      
+    <input type="button" onclick="insert_Row()" value="Insert row">   
+    <script>
+        function insert_Row(){
+            $("#sampleTable").append("<tr><td>cột 0  hàng 1</td><td>cột 1  hàng 1</td></tr>");
+        }
+    </script>
+    </body>
+</html>
